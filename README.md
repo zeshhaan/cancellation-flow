@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This project is built using NextJS, and uses Radix UI for the UI components.
 
 ## Getting Started
 
-First, run the development server:
+Clone the repo, cd into the folder and run following command to install dependencies:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+To start the development server, run:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Flow visualized
 
-## Learn More
+![alt text](image.png)
 
-To learn more about Next.js, take a look at the following resources:
+### What can be improved
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The assignment was to be done in a short time in under 4 hours but it took me more than that, like around 6-7hrs. So It is not complete as per the requirements.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Here are the things that should be done to improve the project:
 
-## Deploy on Vercel
+- Make reusable components: Currently the header and footer is repeated in all the pages, so it should be made as a component and used in all the pages.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Make use of route groups to group related groups together. instead of nesting routes in a recursive manner, we can also look into adding a simple global state using jotai and managing the quiz app in a single page instead of multiple pages.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Icons are missing in the quiz buttons, some of the CTA's are mising in the landing page.
